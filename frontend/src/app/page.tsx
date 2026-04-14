@@ -9,11 +9,11 @@ import {
   Container,
   Row,
 } from "react-bootstrap";
-import { FileItem, AlertItem, PaginatedResponse } from "./item";
-import { formatDate, formatSize } from "./format";
-import { getLevelVariant, getProcessingVariant } from "./getVariant/getVariant";
-import { filesPath, alertsPath, filetDownloadPath } from "./url/url";
-import { ManagerFile, TableSection, ModalWindow, Pagination } from "./component";
+import { FileItem, AlertItem, PaginatedResponse } from "../type";
+import { formatDate, formatSize } from "../util/format";
+import { getLevelVariant, getProcessingVariant } from "../util/getVariant/getVariant";
+import { filesPath, alertsPath, filetDownloadPath } from "../url/url";
+import { ManagerFile, TableSection, ModalWindow, Pagination } from "../component";
 
 export default function Page() {
   const [files, setFiles] = useState<FileItem[]>([]);
